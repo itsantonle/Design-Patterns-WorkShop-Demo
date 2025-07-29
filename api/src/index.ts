@@ -12,6 +12,7 @@ app.use(cors())
 app.use(express.json())
 
 // routes
+app.use(cors())
 app.use('/error', errorRoute)
 
 app.listen(PORT, () => {
