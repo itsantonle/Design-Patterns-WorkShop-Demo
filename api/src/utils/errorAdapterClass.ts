@@ -5,7 +5,13 @@ export class ExpressionAdapter {
   // transforsms keyword expressions to mathematical symbols using regex
   static transformKeywordExpression(query: string): string {
     let count = 0
-
+    //**regex
+    // /substring/ targets substring
+    // g flag replaces all instnces of substring
+    // i means case insensitive
+    // second param is what you replace it with
+    // the last one is a special case when an anonymous function is called and returns a bool to decide if its an open or close parenthesis
+    //  */
     return query
       .replace(/add/gi, '+')
       .replace(/minus/gi, '-')
