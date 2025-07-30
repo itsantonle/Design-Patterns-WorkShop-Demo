@@ -4,8 +4,7 @@ import { ExpressionAdapter } from '../utils/errorAdapterClass'
 export const handleError = async (req: Request, res: Response) => {
   // initialize error factory here
   // results in explicit typing
-  const response: ErrorFactory =
-    ErrorFactory.createError('ZERO_DIVISION').buildResponse()
+  ErrorFactory.createError('ZERO_DIVISION').buildResponse()
   const strOp = req.query.strOp as string
   const result = ExpressionAdapter.evaluateFromQuery(strOp)
 
