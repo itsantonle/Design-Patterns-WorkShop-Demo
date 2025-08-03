@@ -28,3 +28,14 @@ body {
 button {
   @apply cursor-pointer;
 }
+
+input {
+  @apply rounded-md border border-gray-300 p-2;
+  font-family: var(--font-sans);
+}
+
+@layer utilities {
+  .error {
+    @apply text-red-500 text-sm;
+  }
+}

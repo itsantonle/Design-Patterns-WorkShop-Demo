@@ -9,7 +9,7 @@ import React from "react";
 
 const CompoundComponentsPage = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
+    <main>
       <h1>Compound Components</h1>
       <Dialog type="info">
         <DialogTrigger>hey</DialogTrigger>

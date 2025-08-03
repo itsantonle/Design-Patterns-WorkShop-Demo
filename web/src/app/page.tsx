@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 export default function Home() {
@@ -10,11 +9,19 @@ export default function Home() {
           label: "Compound Components",
           href: "/compound",
         },
+        {
+          label: "Container/Presentational",
+          href: "/container-presentational",
+        },
+        {
+          label: "Custom Hooks",
+          href: "/custom-hooks",
+        },
       ].map((item) => (
         <Link
           key={item.label}
           href={item.href}
-          className="bg-neutral-600 px-2 py-1 rounded-md"
+          className="rounded-md bg-neutral-600 px-2 py-1"
         >
           {item.label}
         </Link>
