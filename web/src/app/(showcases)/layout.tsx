@@ -4,7 +4,7 @@ import React, { PropsWithChildren } from "react";
 const ShowcaseLayout = ({ children }: PropsWithChildren) => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-4">
-      <Link href={".."} className="absolute top-4 left-4 hover:bg-white/50 text-black">
+      <Link href={".."} className="absolute top-4 left-4 hover:bg-neutral-500/50 px-2 rounded-md py-1">
         <button>Back to Showcases</button>
       </Link>
       {children}

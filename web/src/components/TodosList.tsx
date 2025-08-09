@@ -4,8 +4,8 @@ import TodoItem from "./TodoItem";
 
 interface TodosListProps {
   todos?: ITodo[];
-  loading: boolean;
-  error: string | null;
+  loading?: boolean;
+  error?: string | null;
 }
 
 const TodosList = ({ todos, loading, error }: TodosListProps) => {
