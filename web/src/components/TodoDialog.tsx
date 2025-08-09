@@ -9,7 +9,7 @@ interface TodoDialogProps {
 const TodoDialog = ({ todo }: TodoDialogProps) => {
   return (
     <Dialog>
-      <DialogTrigger>View Todo</DialogTrigger>
+      <DialogTrigger>{todo.title}</DialogTrigger>
       <DialogContent>
         <DialogTitle>{todo.title}</DialogTitle>
         <p>{todo.description}</p>

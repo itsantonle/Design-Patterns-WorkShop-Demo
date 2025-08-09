@@ -18,6 +18,20 @@ const CompoundComponentsPage = () => {
           <DialogClose />
         </DialogContent>
       </Dialog>
+      <Dialog type="error">
+        <DialogTrigger>hey</DialogTrigger>
+        <DialogContent>
+          <DialogTitle>Dialog Title</DialogTitle>
+          <DialogClose />
+        </DialogContent>
+      </Dialog>
+      <Dialog type="success">
+        <DialogTrigger>hey</DialogTrigger>
+        <DialogContent>
+          <DialogTitle>Dialog Title</DialogTitle>
+          <DialogClose />
+        </DialogContent>
+      </Dialog>
     </main>
   );
 };

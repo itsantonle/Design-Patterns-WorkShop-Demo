@@ -48,9 +48,7 @@ const Dialog = ({ type = "info", children, withX = false }: DialogProps) => {
         withX,
       }}
     >
-      <div>
-        <div className="">{children}</div>
-      </div>
+      {children}
     </DialogContext.Provider>
   );
 };
@@ -68,17 +66,27 @@ function DialogTrigger({ children }: React.PropsWithChildren) {
 }
 
 function DialogContent({ children }: React.PropsWithChildren) {
-  const { isVisible, hideDialog, withX } = useDialogContext();
+  const { isVisible, hideDialog, withX, type } = useDialogContext();
 
   return (
     isVisible && (
       <div className="absolute top-0 left-0 h-screen w-full self-center justify-self-center">
         <div
-          className="absolute top-0 left-0 h-full w-full bg-black/50"
+          className={`absolute top-0 left-0 h-full w-full bg-black/50`}
           onClick={hideDialog}
         />
 
-        <div className="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col rounded-lg bg-neutral-600 p-4 shadow-lg">
+        <div
+          className={
+            "absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col rounded-lg bg-neutral-600 p-4 shadow-lg" +
+              type ===
+            "success"
+              ? "border border-green-500"
+              : type === "error"
+                ? "border border-red-500"
+                : "border border-blue-500"
+          }
+        >
           {withX && (
             <button onClick={hideDialog}>
               <X />

@@ -20,7 +20,7 @@ const GetTodosPage = () => {
       <h1>Todos</h1>
       <ul className="flex flex-col gap-4">
         {data.map((todo) => (
-          <TodoDialog key={todo.id} todo={todo} />
+          <TodoDialog key={todo._id} todo={todo} />
         ))}
       </ul>
     </div>
