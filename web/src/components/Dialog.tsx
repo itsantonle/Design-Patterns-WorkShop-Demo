@@ -7,7 +7,7 @@ interface DialogContextType {
   showDialog: () => void;
   hideDialog: () => void;
   isVisible: boolean;
-  type: "success" | "error" | "info";
+  type: "success" | "warning" | "info";
   withX?: boolean;
 }
 
@@ -22,7 +22,7 @@ const useDialogContext = () => {
 };
 
 interface DialogProps {
-  type?: "success" | "error" | "info";
+  type?: "success" | "warning" | "info";
   children?: React.ReactNode;
   withX?: boolean;
 }
@@ -80,7 +80,7 @@ function DialogContent({ children }: React.PropsWithChildren) {
           className={`absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col rounded-lg bg-neutral-600 p-4 shadow-lg ${
             type === "success"
               ? "border border-green-500"
-              : type === "error"
+              : type === "warning"
                 ? "border border-red-500"
                 : "border border-blue-500"
           } `}

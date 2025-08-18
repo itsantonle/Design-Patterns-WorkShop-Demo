@@ -18,7 +18,7 @@ const CompoundComponentsPage = () => {
           <DialogClose />
         </DialogContent>
       </Dialog>
-      <Dialog type="error">
+      <Dialog type="warning">
         <DialogTrigger>hey</DialogTrigger>
         <DialogContent>
           <DialogTitle>Dialog Title</DialogTitle>
