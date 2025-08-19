@@ -10,6 +10,13 @@ interface UseFetchProps {
   immediate?: boolean; // Controls if the fetch runs on mount
 }
 
+/**
+ * Custom hook for fetching data from a REST API endpoint.
+ *
+ * @param url - The API endpoint URL.
+ * @param options - Fetch options such as method, headers, and body.
+ * @param immediate - Whether to trigger the fetch immediately on mount.
+ */
 const useFetch = <T>({ url, options, immediate = true }: UseFetchProps) => {
   const [data, setData] = useState<T | null>(null);
   const [error, setError] = useState<string | null>(null);

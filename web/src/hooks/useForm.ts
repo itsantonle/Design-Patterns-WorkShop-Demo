@@ -12,7 +12,15 @@ interface UseFormProps<I, O> {
   headers?: Record<string, string>;
   opts?: RequestInit;
 }
-
+/**
+ * Custom hook for managing form state and submission.
+ *
+ * @param initialValues - The initial values for the form fields.
+ * @param submitTo - The endpoint or function to submit the form data.
+ * @param method - The HTTP method to use for the submission.
+ * @param headers - Headers to include in the submission request.
+ * @param opts - Additional options for the fetch request.
+ */
 const useForm = <I, O>({
   initialValues,
   submitTo,

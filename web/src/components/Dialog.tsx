@@ -120,7 +120,5 @@ export {
   DialogTitle,
   DialogContent,
   DialogClose,
-  useDialogContext,
-  DialogContext,
   DialogTrigger,
 };

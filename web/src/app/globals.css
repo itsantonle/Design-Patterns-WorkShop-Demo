@@ -34,8 +34,16 @@ input {
   font-family: var(--font-sans);
 }
 
+h1 {
+  @apply text-2xl font-bold;
+}
+
+h2 {
+  @apply text-xl font-semibold;
+}
+
 @layer utilities {
   .error {
-    @apply text-red-500 text-sm;
+    @apply text-sm text-red-500;
   }
 }
