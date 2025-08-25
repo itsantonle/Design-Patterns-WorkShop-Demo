@@ -82,3 +82,7 @@ If you're interested in reading further documentation
 | [tsx](https://www.npmjs.com/package/tsx) | ^4.20.3 | Fast TypeScript + JSX runtime for dev environments | [tsx docs](https://www.npmjs.com/package/tsx) |
 | [@types/express](https://www.npmjs.com/package/@types/express) | ^5.0.3 | Type definitions for Express | [DefinitelyTyped](https://www.npmjs.com/package/@types/express) |
 | [@types/cors](https://www.npmjs.com/package/@types/cors) | ^2.8.19 | Type definitions for CORS | [DefinitelyTyped](https://www.npmjs.com/package/@types/cors) |
+| [next](https://www.npmjs.com/package/next) | ^15.5.0 | React framework for server-rendered and static web applications | [nextjs.org](https://nextjs.org/) |
+| [react](https://www.npmjs.com/package/react) | ^19.1.0 | A JavaScript library for building user interfaces | [reactjs.org](https://reactjs.org/) |
+| [lucide-react](https://www.npmjs.com/package/lucide-react) | ^0.541.0 | A collection of free and open source icons for React | [lucide.dev](https://lucide.dev/) |
+| [tailwindcss](https://www.npmjs.com/package/tailwindcss) | ^4.1 | A utility-first CSS framework for rapidly building custom designs | [tailwindcss.com](https://tailwindcss.com/) |
